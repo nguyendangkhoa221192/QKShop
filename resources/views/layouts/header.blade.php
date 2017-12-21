@@ -25,7 +25,7 @@
 			
 			<!-- LOGO -->
 			<div class="logo">
-				<a href="index.html" ><img src="images/logo.png" alt="" /></a>
+				<a href="index.html" ><img src="{{ asset ('images/logo.png') }}" alt="" /></a>
 			</div><!-- //LOGO -->
 			
 			
@@ -44,12 +44,12 @@
 				<div class="cart">
 					<ul class="cart-items">
 						<li class="clearfix">
-							<img class="cart_item_product" src="images/tovar/women/1.jpg" alt="" />
+							<img class="cart_item_product" src="{{ asset ('images/tovar/women/1.jpg') }}" alt="" />
 							<a href="product-page.html" class="cart_item_title">popover sweatshirt in floral jacquard</a>
 							<span class="cart_item_price">1 × $98.00</span>
 						</li>
 						<li class="clearfix">
-							<img class="cart_item_product" src="images/tovar/women/3.jpg" alt="" />
+							<img class="cart_item_product" src="{{ asset ('images/tovar/women/3.jpg') }}" alt="" />
 							<a href="product-page.html" class="cart_item_title">japanese indigo denim jacket</a>
 							<span class="cart_item_price">2 × $158.00</span>
 						</li>

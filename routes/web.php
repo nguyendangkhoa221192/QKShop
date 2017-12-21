@@ -15,3 +15,6 @@
 //     return view('welcome');
 // });
 Route::match(['get', 'post'],'/' ,'Home\HomeController@index')->name('home');
+Route::get('errors/404', function() {
+    return view('errors.404');
+});

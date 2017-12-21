@@ -62,7 +62,7 @@
 		
 		<!-- CONTAINER -->
 		<div class="container clearfix">
-			<div class="foot_logo"><a href="index.html" ><img src="images/foot_logo.png" alt="" /></a></div>
+			<div class="foot_logo"><a href="index.html" ><img src="{{ asset ('images/foot_logo.png') }}" alt="" /></a></div>
 			
 			<div class="copyright_inf">
 				<span>Glammy Shop© 2014</span> |
@@ -71,4 +71,9 @@
 			</div>
 		</div><!-- //CONTAINER -->
 	</div><!-- //COPYRIGHT -->
-			</footer><!-- //FOOTER -->
+</footer><!-- //FOOTER -->
+<!-- TOVAR MODAL CONTENT -->
+<div id="modal-body" class="clearfix">
+	<div id="tovar_content"></div>
+	<div class="close_block"></div>
+</div>
