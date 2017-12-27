@@ -25,7 +25,7 @@
 			
 			<!-- LOGO -->
 			<div class="logo">
-				<a href="index.html" ><img src="{{ asset ('images/logo.png') }}" alt="" /></a>
+				<a href="{{ route('home') }}" ><img src="{{ asset ('images/logo.png') }}" alt="" /></a>
 			</div><!-- //LOGO -->
 			
 			
