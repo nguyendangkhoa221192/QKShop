@@ -16,7 +16,7 @@
 					<h1>404</h1>
 					<h2>ERROR</h2>
 					<p>The page you are looking for does not exist. Return to the home page</p>
-					<a class="btn btn-white" href="index.html" >Return to home page</a>
+					<a class="btn btn-white" href="{{ route('home') }}" >Return to home page</a>
 				</div>
 			</div><!-- //CONTAINER -->
 		</section><!-- //PAGE 404 -->

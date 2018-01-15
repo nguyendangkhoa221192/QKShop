@@ -34,6 +34,7 @@
 </head>
 
 <body>
+	<div id="preloader"><img src="images/preloader.gif" alt="" /></div>
 	@include('layouts.header')
     @yield('content')
     @include('layouts.footer')

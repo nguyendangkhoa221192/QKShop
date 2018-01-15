@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-    	
-    	return view('home.index');
+    	$title = 'Home Controller';
+    	return view('home.index', ['title' => $title]);
     }
 }

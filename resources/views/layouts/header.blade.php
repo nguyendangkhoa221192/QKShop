@@ -6,8 +6,8 @@
 		<!-- CONTAINER -->
 		<div class="container clearfix">
 			<ul class="secondary_menu">
-				<li><a href="my-account.html" >my account</a></li>
-				<li><a href="my-account.html" >Register</a></li>
+				<li><a href="{{ route('account') }}" >My account</a></li>
+				<li><a href="{{ route('account') }}" >Register</a></li>
 			</ul>
 			
 			<div class="live_chat"><a href="javascript:void(0);" ><i class="fa fa-comment-o"></i> Live chat</a></div>

@@ -15,3 +15,4 @@
 //     return view('welcome');
 // });
 Route::match(['get', 'post'],'/' ,'Home\HomeController@index')->name('home');
+Route::match(['get', 'post'],'/account' ,'Account\AccountController@index')->name('account');
