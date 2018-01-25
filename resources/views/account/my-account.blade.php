@@ -16,9 +16,9 @@
 		<div class="my_account_block clearfix">
 			<div class="login">
 				<h2>I'M ALREADY REGISTERED</h2>
-				<form class="login_form" action="javascript:void(0);" method="get">
+				<form class="login_form" action="{{ route('createUser') }}" method="post">
+					{{ csrf_field() }}
 					<input type="text" name="username" value="Username or email" id="username" />
-					{{--  onFocus="if (this.value == 'Username or email') this.value = '';" onBlur="if (this.value == '') this.value = 'Username or email';" --}}
 					<input class="last" type="password" name="password" value="Password" id="password" />
 					<div class="clearfix">
 						<div class="pull-left"><input type="checkbox" id="categorymanufacturer1" /><label for="categorymanufacturer1">Keep me signed</label></div>
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 
-		<div class="my_account_note center">HAVE A QUESTION? <b>1 800 888 02828</b></div>
+		<div class="my_account_note center">HAVE A QUESTION? <b>0933 463 947</b></div>
 	</div><!-- //CONTAINER -->
 </section>
 

@@ -16,3 +16,6 @@
 // });
 Route::match(['get', 'post'],'/' ,'Home\HomeController@index')->name('home');
 Route::match(['get', 'post'],'/account' ,'Account\AccountController@index')->name('account');
+Route::prefix('/account')->group(function() {
+	Route::post('create', 'Account\AccountController@createUser')->name('createUser');
+});

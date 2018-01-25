@@ -11,4 +11,8 @@ class AccountController extends Controller
 
     	return view('account.my-account');
     }
+
+    public function createUser(Request $request) {
+    	dd($request->input('username'), $request->input('password'));
+    }
 }
