@@ -19,3 +19,6 @@ Route::match(['get', 'post'],'/account' ,'Account\AccountController@index')->nam
 Route::prefix('/account')->group(function() {
 	Route::post('create', 'Account\AccountController@createUser')->name('createUser');
 });
+Auth::routes();
+
+Route::get('/home', 'Home\HomeController@index')->name('home');

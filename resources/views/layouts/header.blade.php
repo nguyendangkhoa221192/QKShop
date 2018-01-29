@@ -1,34 +1,54 @@
 <header>
-	
+
 	<!-- TOP INFO -->
 	<div class="top_info">
-		
+
 		<!-- CONTAINER -->
 		<div class="container clearfix">
-			<ul class="secondary_menu">
-				<li><a href="{{ route('account') }}" >My account</a></li>
-				<li><a href="{{ route('account') }}" >Register</a></li>
-			</ul>
-			
+				@guest
+				<ul class="secondary_menu">
+					<li><a href="{{ route('login') }}" >Login</a></li>
+					<li><a href="{{ route('register') }}" >Register</a></li>
+				</ul>
+				@else
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle">
+						{{ Auth::user()->name }}
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								{{ csrf_field() }}
+							</form>
+						</li>
+						<li>
+							<a href="{{ route('account') }}" >My account</a>
+						</li>
+					</ul>
+				</li>
+				@endguest
+
 			<div class="live_chat"><a href="javascript:void(0);" ><i class="fa fa-comment-o"></i> Live chat</a></div>
-			
+
 			<div class="phone_top">have a question? <a href="tel:1 800 888 2828" >1 800 888 2828</a></div>
 		</div><!-- //CONTAINER -->
 	</div><!-- TOP INFO -->
-	
-	
+
+
 	<!-- MENU BLOCK -->
 	<div class="menu_block">
-		
+
 		<!-- CONTAINER -->
 		<div class="container clearfix">
-			
+
 			<!-- LOGO -->
 			<div class="logo">
 				<a href="{{ route('home') }}" ><img src="{{ asset ('images/logo.png') }}" alt="" /></a>
 			</div><!-- //LOGO -->
-			
-			
+
+
 			<!-- SEARCH FORM -->
 			<div class="top_search_form">
 				<a class="top_search_btn" href="javascript:void(0);" ><i class="fa fa-search"></i></a>
@@ -36,8 +56,8 @@
 					<input type="text" name="search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
 				</form>
 			</div><!-- SEARCH FORM -->
-			
-			
+
+
 			<!-- SHOPPING BAG -->
 			<div class="shopping_bag">
 				<a class="shopping_bag_btn" href="javascript:void(0);" ><i class="fa fa-shopping-cart"></i><p>shopping bag</p><span>2</span></a>
@@ -60,8 +80,8 @@
 					</div>
 				</div>
 			</div><!-- //SHOPPING BAG -->
-			
-			
+
+
 			<!-- LOVE LIST -->
 			<div class="love_list">
 				<a class="love_list_btn" href="javascript:void(0);" ><i class="fa fa-heart-o"></i><p>Love list</p><span>0</span></a>
@@ -75,8 +95,8 @@
 					</div>
 				</div>
 			</div><!-- //LOVE LIST -->
-			
-			
+
+
 			<!-- MENU -->
 			<ul class="navmenu center">
 				<li class="sub-menu first active"><a href="javascript:void(0);" >Home</a>
@@ -149,7 +169,7 @@
 								<li><a href="love-list.html" >Love List</a></li>
 								<li><a href="shopping-bag.html" >Shopping Bag</a></li>
 								<li><a href="my-account.html" >My Account</a></li>
-								
+
 							</ol>
 						</li>
 						<li class="col">

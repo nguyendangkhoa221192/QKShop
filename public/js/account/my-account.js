@@ -16,4 +16,3 @@ $(document).ready(function(){
 			$(this).val('Password');
 	});
 });
-

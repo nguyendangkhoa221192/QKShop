@@ -1731,7 +1731,7 @@ a.add_lovelist:hover {
 	right:-4px;
 	bottom:-4px;
 	border:1px solid #e9e9e9;
-	transition: all 0.1s ease-in-out; 
+	transition: all 0.1s ease-in-out;
 	-webkit-transition: all 0.1s ease-in-out;
 }
 .tovar_color_select a:hover:before,
@@ -1951,7 +1951,7 @@ a.add_lovelist:hover {
 
 /* Reviews */
 ul.comments li{
-	position:relative;	
+	position:relative;
 	margin-bottom:30px;
 	margin-left:0;
 }
@@ -1967,7 +1967,7 @@ ul.comments li .fa + p{margin-top:10px;}
 ul.comments li ul li{
 	background:#f7f7f7;
 	padding:15px 20px;
-	margin:20px 0 20px 20px;	
+	margin:20px 0 20px 20px;
 }
 
 .rating-box {padding:5px 0;}
@@ -2108,7 +2108,7 @@ ul.comments li ul li{
 /* __________ Recent Posts __________ */
 .recent_post_item {
 	position:relative;
-} 
+}
 .recent_post_date {
 	position:absolute;
 	z-index:10;
@@ -4488,11 +4488,11 @@ input[type="text"] {
 	font-size: 11px;
 	color: #666;
 	font-style:normal;
-	border-radius: 0;	
+	border-radius: 0;
 	background: #fff;
 	border: 2px solid #e9e9e9;
 	box-shadow: none;
-	transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
 input[type="password"] {
@@ -4507,11 +4507,11 @@ input[type="password"] {
 	font-size: 11px;
 	color: #666;
 	font-style:normal;
-	border-radius: 0;	
+	border-radius: 0;
 	background: #fff;
 	border: 2px solid #e9e9e9;
 	box-shadow: none;
-	transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
 input[type="text"].email {margin-right:0;}
@@ -4542,11 +4542,11 @@ input[type="submit"] {
 	line-height:20px;
 	font-size: 14px;
 	color: #fff;
-	border-radius: 0;	
+	border-radius: 0;
 	background: #434343;
 	border: 0;
 	box-shadow: none;
-	transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
 input[type="submit"]:hover {background-color:#242424;}
@@ -4645,20 +4645,20 @@ input[type="submit"]:hover {background-color:#242424;}
 /*	RESPONSIVE STYLES
 /*-----------------------------------------------------------------------------------*/
 
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
-	
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
 
 }
 
 @media (max-width: 1024px) {
 
-	
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
 	.respond_clear_1024 {clear:both; height:0; font-size:0;}
-	
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SLIDER
@@ -4666,129 +4666,129 @@ input[type="submit"]:hover {background-color:#242424;}
 
 	/* __________ Menu __________ */
 	.navmenu li a {padding-left:12px; padding-right:12px;}
-	
-	
+
+
 	/* __________ Tovar Item __________ */
 	.tovar_item_btns a {margin:0 0 0 2px;}
 	.tovar_view {padding-left:12px; padding-right:12px; font-size:12px;}
-	
-	
+
+
 	/* __________ Brands Carousel __________ */
 	.brands_carousel .jcarousel {width:882px;}
 
-	
+
 	/* __________ Recent Posts __________ */
 	.recent_post_img {width:200px; margin-right:15px;}
 	.recent_post_title {font-size:18px; line-height:22px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME MEN PROMO
 /*-----------------------------------------------------------------------------------*/
-	
+
 	/* __________ Banners __________ */
 	.top_sale {min-height:830px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME KIDS
 /*-----------------------------------------------------------------------------------*/
 	.school_sale {min-height:520px;}
 	.school_sale_description {padding:210px 0 120px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME VIDEO
 /*-----------------------------------------------------------------------------------*/
 	.fashion_week {min-height:800px;}
 	.video_wrapper {width:700px; height:346px;}
 	.video_wrapper iframe {height:346px;}
-	
+
 	/* __________ Best Products Carousel __________ */
 	.best_products .jcarousel li {width:220px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SHOES
 /*-----------------------------------------------------------------------------------*/
 	.shoes_page {min-height:740px;}
 	.shoes_page_description {padding:150px 0 70px;}
-	
-	
+
+
 	/* __________ Popular Articles carousel __________ */
 	.popular_articles .jcarousel li {width:303px;}
 	.article_title {font-size:24px; line-height:30px;}
 	.post_meta li {font-size:10px; padding-right:10px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SHOP
 /*-----------------------------------------------------------------------------------*/
 	.breadcrumb.women, .breadcrumb.men {padding:120px 0 40px;}
 	.breadcrumb h2 {font-size:90px; line-height:90px;}
-	
-	
+
+
 	/* __________ Tovar Item Sizes __________ */
 	.shop_block.variable-sizes .tovar_wrapper {width:374px;}
 	.shop_block.variable-sizes .tovar_img {width:150px;}
 	.shop_block.variable-sizes .tovar_description {width:193px;}
 	.shop_block.variable-sizes .tovar_item_btns {width:198px;}
-	
-	
+
+
 	/* __________ Product Details __________ */
 	.tovar_view_fotos {width:430px;}
 	.tovar_view_description {width:255px;}
 	.tovar_view_title {font-size:26px; line-height:28px;}
 	.tovar_view_btn .add_bag {padding:13px 18px;}
-	
-	
+
+
 	/* __________ Love List __________ */
 	table tr.cart_item td.product-name {width:200px;}
 	table tr.cart_item td.product-add-bag {width:160px;}
-	
-	
+
+
 	/* __________ Shopping Bag __________ */
 	.widget_bag_totals .btn {padding-left:5px; padding-right:5px;}
-	
-	
+
+
 	/* __________ Product Catalog __________ */
 	.product_catalog_item img {width:200px;}
 	.product_catalog_item .product_catalog_list {padding-left:230px;}
 	.product_catalog_list li {padding-top:3px;}
 	.product_catalog_list li:before {top:7px;}
-	
-	
+
+
 	/* __________ Brands List __________ */
 	.brand_letter {font-size:80px; line-height:80px; margin-right:20px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SITE UPDATE
 /*-----------------------------------------------------------------------------------*/
 	.update_wrapper {padding:130px 0 90px;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	CONTACT PAGE
 /*-----------------------------------------------------------------------------------*/
 	#ajax-contact-form textarea {min-height:168px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	PAGE 404
 /*-----------------------------------------------------------------------------------*/
 	.page404 {min-height:500px;}
 	.wrapper404 {padding-top:100px;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	ARTICLES
@@ -4796,18 +4796,18 @@ input[type="submit"]:hover {background-color:#242424;}
 	.article_large .article_image {width:580px;}
 	.article_large .article_title {line-height:34px;}
 	.article_small .article_title {font-size:18px; line-height:22px;}
-	
-	
+
+
 	/* __________ Single Article __________ */
 	.article_single .article_image {width:630px;}
 	.article_single_caption {width:369px; height:283px;}
 	.article_single_caption p {font-size:32px; line-height:36px;}
 	.article_single_content h3 {width:630px; font-size:17px; line-height:26px;}
 	.article_single_content blockquote {width:269px;}
-	
+
 	.flexslider.article_slider {width:500px;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	CHECOUT
@@ -4815,40 +4815,40 @@ input[type="submit"]:hover {background-color:#242424;}
 	.checkout_form_input {width:215px; margin-right:15px;}
 	.checkout_form .country .fancy-select .trigger {width:215px;}
 	.checkout_form_input2 {margin-right:15px; width:445px;}
-	
+
 	.checkout_delivery li {width:21%; margin-right:30px;}
-	
+
 	.payment_method {width:660px;}
 	.payment_method li {width:125px;}
 	.checkout_block input[type="radio"] + label img {width:100%;}
-	
+
 	.billing_information {width:150px;}
 	.checkout_confirm_orded_products {width:240px; margin-left:20px;}
-	
-	
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	BLOG
 /*-----------------------------------------------------------------------------------*/
 	.post.large_image .post_title {font-size:34px; line-height:40px;}
 	.post .post_title {font-size:24px; line-height:30px;}
-	
+
 	#comment_form input[type="text"] {width:49%;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	FOOTER
 /*-----------------------------------------------------------------------------------*/
 	footer .newsletter_btn {width:100px;}
 	footer .newsletter_form input[type="text"] {width:194px;}
 
-	
-	
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.respond_clear_768 {clear:both; height:0; font-size:0;}
-	
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SLIDER
@@ -4856,94 +4856,94 @@ input[type="submit"]:hover {background-color:#242424;}
 
 	/* __________ Menu __________ */
 	.navmenu li a {padding-left:11px; padding-right:11px;}
-	
+
 	.love_list .love_list_btn p, .shopping_bag .shopping_bag_btn p {display:none;}
 	.shopping_bag .shopping_bag_btn, .love_list .love_list_btn {padding:20px 10px;}
 	.cart {left:auto; right:0;}
-	
-	
+
+
 	.navmenu li.sub-menu ul.megamenu_col3 {width:355px;}
 	.navmenu li.sub-menu ul li a {font-size:10px; line-height:15px; padding-bottom:5px;}
 	.navmenu li ul.mega_menu li.col {padding-left:10px; width:116px;}
-	
+
 	/* __________ Tovar Item __________ */
 	.tovar_item_btns a {margin:0 0 0 2px;}
 	.tovar_view {padding-left:12px; padding-right:12px; font-size:12px;}
-	
-	
+
+
 	/* __________ Brands Carousel __________ */
 	.brands_carousel .jcarousel {width:662px;}
 
-	
+
 	/* __________ Recent Posts __________ */
 	.recent_post_img {width:200px; margin-right:15px;}
 	.recent_post_title {font-size:18px; line-height:22px;}
-	
-	
+
+
 	/* __________ Services __________ */
 	.service_item i {width:28px; font-size:30px;}
 	.service_item p {font-size:14px;}
 	.service_item span {font-size:11px; line-height:17px;}
-	
+
 	.service_item.type2 p {font-size:20px; line-height:20px;}
 	.service_item.type2 span {padding:0;}
-	
-	
+
+
 	/* __________ Banners __________ */
 	.tovar_wrapper .banner {display:inline-block;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME MEN PROMO
 /*-----------------------------------------------------------------------------------*/
-	
+
 	/* __________ Banners __________ */
 	.top_sale {min-height:600px;}
-	
+
 	.top_sale_description {padding:170px 0 50px;}
 	.top_sale_description p {font-size:60px; line-height:60px;}
 	.top_sale_description span {font-size:24px; line-height:28px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME KIDS
 /*-----------------------------------------------------------------------------------*/
 	.school_sale {min-height:450px;}
-	
+
 	.school_sale_description {padding:170px 0 50px; width:450px;}
 	.school_sale_description p {font-size:60px; line-height:60px;}
 	.school_sale_description span {font-size:24px; line-height:28px;}
-	
-	
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME VIDEO
 /*-----------------------------------------------------------------------------------*/
 	.fashion_week {min-height:620px;}
-	
+
 	.fashion_week_description p {font-size:60px; line-height:60px;}
 	.fashion_week_description span {font-size:24px; line-height:28px;}
-	
+
 	.video_wrapper {width:550px; height:272px;}
 	.video_wrapper iframe {height:272px;}
-	
-	
-	
-	
+
+
+
+
 	/* __________ Best Products Carousel __________ */
 	.best_products .jcarousel li {width:220px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SALE
 /*-----------------------------------------------------------------------------------*/
 	.sale_caption1 .title1 {font-size:60px; line-height:60px;}
 	.sale_caption1 .title2 {font-size:24px; line-height:28px; margin-bottom:25px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SHOES
 /*-----------------------------------------------------------------------------------*/
@@ -4952,130 +4952,130 @@ input[type="submit"]:hover {background-color:#242424;}
 	.shoes_page_description p {font-size:60px; line-height:60px;}
 	.shoes_page_description p b {font-size:70px; line-height:70px;}
 	.shoes_page_description span {font-size:40px; line-height:40px; padding-bottom:40px;}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	/* __________ Popular Articles carousel __________ */
 	.popular_articles .jcarousel li {width:230px;}
 	.article_title {font-size:18px; line-height:20px;}
 	.post_meta li {font-size:10px; padding-right:10px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SHOP
 /*-----------------------------------------------------------------------------------*/
 	.breadcrumb.women, .breadcrumb.men {padding:120px 0 40px;}
 	.breadcrumb h2 {font-size:90px; line-height:90px;}
-	
-	
+
+
 	/* __________ Sidebar __________ */
 	#price-range input {width:50%;}
-	
+
 	.widget_newsletter input[type="text"] {font-size:8px;}
 	.widget_newsletter input[type="submit"] {font-size:9px;}
-	
-	
+
+
 	.tovar_title {font-size:12px; width:77%;}
-	
-	
+
+
 	.widget_popular_post_img {width:100%; float:none; margin-right:0;}
 	.widget_popular_post_img img {width:100%;}
-	
-	
+
+
 	/* __________ New Arrivals __________ */
 	.new_arrivals .jcarousel li {width:165px;}
-	
-	
-	
+
+
+
 	/* __________ Tovar Item Sizes __________ */
 	.product_sort {width:60%;}
-	
+
 	.shop_block.variable-sizes .tovar_wrapper {width:100%; padding-right:0;}
 	.shop_block.variable-sizes .tovar_img {width:200px;}
 	.shop_block.variable-sizes .tovar_description {width:369px;}
 	.shop_block.variable-sizes .tovar_item_btns {width:180px;}
-	
+
 	.tovar_description {min-height:60px;}
-	
-	
+
+
 	.shop .top_sale_banners .banner {width:100%;}
-	
-	
+
+
 	/* __________ Product Details __________ */
 	.tovar_view_fotos {width:430px;}
 	.tovar_view_description {width:289px;}
 	#modal-body .tovar_view_description {width:227px;}
 	.tovar_view_title {font-size:26px; line-height:28px;}
 	.tovar_view_btn .add_bag {padding:13px 18px;}
-	
-	
+
+
 	.tovar_items_small li {display:inline-block; width:49%; padding-right:40px;}
 	#sidebar .tovar_items_small li {width:100%; float:none; padding-right:0;}
-	
-	
+
+
 	/* __________ Modal __________ */
 	#tovar_content {width:750px;}
-	
-	
-	
+
+
+
 	/* __________ Love List __________ */
 	table tr.cart_item td.product-name {width:200px;}
 	table tr.cart_item td.product-add-bag {width:160px;}
-	
-	
+
+
 	/* __________ Shopping Bag __________ */
 	.widget_bag_totals .btn {padding-left:5px; padding-right:5px;}
-	
-	
+
+
 	/* __________ Product Catalog __________ */
 	.product_catalog_item img {width:140px; margin-right:20px;}
 	.product_catalog_item .product_catalog_list {padding-left:160px;}
 	.product_catalog_list li {padding-top:3px;}
 	.product_catalog_list li:before {top:7px;}
-	
-	
+
+
 	/* __________ Brands List __________ */
 	.brand_letter {font-size:60px; line-height:60px; margin-right:10px; width:55px;}
 	.brands_list_block .product_catalog_list {padding-left:50px;}
 	.brands_list_block .product_catalog_list li {padding-top:0;}
 	.brands_list_block .product_catalog_list li:before {top:4px;}
 	.brands_list_block .product_catalog_list li a {font-size:10px;}
-	
-	
-	
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
 	.about_us_description p {font-size:18px; line-height:22px;}
 	.about_us_description span {font-size:11px; line-height:17px; margin-bottom:10px;}
-	
-	
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SITE UPDATE
 /*-----------------------------------------------------------------------------------*/
 	.update_wrapper {padding:130px 0 90px;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	CONTACT PAGE
 /*-----------------------------------------------------------------------------------*/
 	#ajax-contact-form textarea {min-height:168px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	PAGE 404
 /*-----------------------------------------------------------------------------------*/
 	.page404 {min-height:500px;}
 	.wrapper404 {padding-top:100px;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	ARTICLES
@@ -5083,56 +5083,56 @@ input[type="submit"]:hover {background-color:#242424;}
 	.article_large .article_image {width:430px;}
 	.article_large .article_title {line-height:22px; font-size:20px;}
 	.article_small .article_title {font-size:18px; line-height:22px;}
-	
-	
+
+
 	/* __________ Single Article __________ */
 	.article_single .article_image {width:500px;}
 	.article_single_caption {width:279px; height:209px;}
 	.article_single_caption p {font-size:22px; line-height:26px;}
 	.article_single_content h3 {width:500px; font-size:17px; line-height:22px;}
 	.article_single_content blockquote {width:179px;}
-	
+
 	.flexslider.article_slider {width:370px; margin:0 20px 10px 0;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	CHECOUT
 /*-----------------------------------------------------------------------------------*/
 	.checkout_nav li {font-size:16px;}
-	
+
 	.checkout_form_input {width:160px; margin-right:15px;}
 	.checkout_form .country .fancy-select .trigger {width:160px;}
 	.checkout_form_input2 {margin-right:15px; width:335px;}
-	
+
 	.checkout_delivery li {width:21%; margin-right:20px;}
-	
+
 	.payment_method {width:449px;}
 	.payment_method li {width:125px; padding-bottom:20px;}
 	.checkout_block input[type="radio"] + label img {width:100%;}
-	
+
 	.billing_information {width:150px;}
 	.checkout_confirm_orded_products {width:240px; margin-left:20px;}
-	
-	
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	BLOG
 /*-----------------------------------------------------------------------------------*/
 	.post.large_image .post_title {font-size:34px; line-height:40px;}
 	.post .post_title {font-size:24px; line-height:30px;}
-	
+
 	#comment_form input[type="text"] {width:49%;}
 	#comment_form .comment_note {display:inline-block; width:50%;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SHORTCODES
 /*-----------------------------------------------------------------------------------*/
-	
-	
-	
-	
+
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	FOOTER
 /*-----------------------------------------------------------------------------------*/
@@ -5143,26 +5143,26 @@ input[type="submit"]:hover {background-color:#242424;}
 }
 
 @media (min-width: 767px) {
-	
+
 	.navmenu {display:block !important;}
 
 }
 
 @media (max-width: 767px) {
 	.container {padding-left:15px; padding-right:15px;}
-	
-	
+
+
 	.respond_clear_480 {clear:both; height:0; font-size:0;}
-	
+
 /*-----------------------------------------------------------------------------------*/
 /*	MENU
-/*-----------------------------------------------------------------------------------*/	
+/*-----------------------------------------------------------------------------------*/
 	.menu_block {height:auto;}
-	
+
 	.menu_toggler {float:right; display:block; width:60px; height:60px; line-height:60px; text-align:center; font-size:23px; color:#333; border-right:1px solid #e9e9e9;}
 	.menu_toggler:hover {color:#242424;}
-	
-	
+
+
 	.navmenu {display:none; float:none; position:absolute; left:0; top:101px; width:100%; background-color:#fff; margin:0; padding:20px 15px; border-top:1px solid #e9e9e9;}
 	.navmenu li {display:block; margin:0; text-align:left;}
 	.navmenu li.sub-menu:hover {background:none !important;}
@@ -5170,25 +5170,25 @@ input[type="submit"]:hover {background-color:#242424;}
 	.navmenu li a {padding:10px 0 0 0; margin:0 !important;}
 	.navmenu li:hover a, .navmenu li.active a {border:0 !important; color:#242424;}
 	.navmenu li a:before, .navmenu li a:after {display:none !important;}
-	
+
 	.navmenu li.sale_menu:hover a, .navmenu li.sale_menu.active a {background:none; color:#333;}
-	
+
 	/* Submenu 1 lvl */
 	.navmenu li.sub-menu ul {display:none; position:static; border:0; padding:5px 0;}
 	.navmenu li.sub-menu:hover ul {display:block;}
 	.navmenu li.sub-menu ul li a {padding-bottom:0;}
 	.navmenu li.sub-menu ul li a:before {display:block !important;}
-	
+
 	/* MegaMenu */
 	.navmenu li.sub-menu ul.megamenu_col1, .navmenu li.sub-menu ul.megamenu_col2, .navmenu li.sub-menu ul.megamenu_col3 {width:100%;}
 	.navmenu li ul.mega_menu li.col {width:33%;}
-	
-	
+
+
 	.love_list .love_list_btn p, .shopping_bag .shopping_bag_btn p {display:none;}
 	.shopping_bag .shopping_bag_btn, .love_list .love_list_btn {padding:20px 10px;}
 	.cart {left:auto; right:0;}
-	
-	
+
+
 	/* __________ Top Info __________ */
 	.secondary_menu li {padding-right:5px; margin-right:6px;}
 	.secondary_menu li a {font-size:10px;}
@@ -5196,94 +5196,94 @@ input[type="submit"]:hover {background-color:#242424;}
 	.live_chat a {font-size:10px;}
 	.phone_top {font-size:10px;}
 	.phone_top a {font-size:12px;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SLIDER
 /*-----------------------------------------------------------------------------------*/
-	
+
 	/* __________ Tovar Item __________ */
 	.tovar_item_btns a {margin:0 0 0 2px;}
 	.tovar_view {padding-left:12px; padding-right:12px; font-size:12px;}
-	
-	
+
+
 	/* __________ Brands Carousel __________ */
 	.brands_carousel .jcarousel {width:362px;}
 	.brands_carousel .jcarousel li {width:114px; margin-right:10px;}
-	
 
-	
+
+
 	/* __________ Recent Posts __________ */
 	.recent_post_img {width:200px; margin-right:15px;}
 	.recent_post_title {font-size:18px; line-height:22px;}
-	
-	
+
+
 	/* __________ Services __________ */
 	.service_item i {width:28px; font-size:30px;}
 	.service_item p {font-size:14px;}
 	.service_item span {font-size:11px; line-height:17px;}
-	
+
 	.service_item.type2 p {font-size:20px; line-height:20px;}
 	.service_item.type2 span {padding:0;}
-	
-	
+
+
 	/* __________ Banners __________ */
-	
-	
-	
-	
+
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME MEN PROMO
 /*-----------------------------------------------------------------------------------*/
-	
+
 	/* __________ Banners __________ */
 	.top_sale {min-height:500px;}
-	
+
 	.top_sale_description {padding:170px 0 50px;}
 	.top_sale_description p {font-size:60px; line-height:60px;}
 	.top_sale_description span {font-size:24px; line-height:28px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME KIDS
 /*-----------------------------------------------------------------------------------*/
 	.school_sale {min-height:300px;}
-	
+
 	.school_sale_description {padding:140px 0 50px; width:300px;}
 	.school_sale_description p {font-size:40px; line-height:40px;}
 	.school_sale_description span {font-size:14px; line-height:20px;}
-	
-	
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME VIDEO
 /*-----------------------------------------------------------------------------------*/
 	.fashion_week {min-height:450px;}
-	
+
 	.fashion_week_description p {font-size:40px; line-height:40px;}
 	.fashion_week_description span {font-size:14px; line-height:20px;}
-	
+
 	.fashion_week_description {padding:140px 0 30px;}
 	.video_wrapper {width:400px; height:196px;}
 	.video_wrapper iframe {height:272px;}
-	
-	
-	
-	
+
+
+
+
 	/* __________ Best Products Carousel __________ */
 	.best_products .jcarousel li {width:220px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SALE
 /*-----------------------------------------------------------------------------------*/
 	.sale_caption1 .title1 {font-size:60px; line-height:60px;}
 	.sale_caption1 .title2 {font-size:24px; line-height:28px; margin-bottom:25px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME SHOES
 /*-----------------------------------------------------------------------------------*/
@@ -5292,73 +5292,73 @@ input[type="submit"]:hover {background-color:#242424;}
 	.shoes_page_description p {font-size:40px; line-height:40px;}
 	.shoes_page_description p b {font-size:45px; line-height:40px;}
 	.shoes_page_description span {font-size:24px; line-height:24px; padding-bottom:30px;}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	/* __________ Popular Articles carousel __________ */
 	.popular_articles .jcarousel li {width:217px; margin-right:15px;}
 	.article_title {font-size:18px; line-height:20px;}
 	.post_meta li {font-size:10px; padding-right:10px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SHOP
 /*-----------------------------------------------------------------------------------*/
 	.breadcrumb.women, .breadcrumb.men {padding:120px 0 40px;}
 	.breadcrumb h2 {font-size:90px; line-height:90px;}
-	
-	
+
+
 	/* __________ Sidebar __________ */
 	#price-range input {width:50%;}
-	
-	
+
+
 	.tovar_title {font-size:12px; width:73%;}
-	
-	
+
+
 	.widget_banners a {display:inline-block; width:143px; margin-right:5px;}
 	.widget_banners a:last-child {margin-right:0;}
-	
-	
-	
+
+
+
 	/* __________ New Arrivals __________ */
 	.new_arrivals .jcarousel li {width:130px;}
-	
-	
-	
+
+
+
 	/* __________ Tovar Item Sizes __________ */
 	.product_sort {width:53%;}
-	
+
 	.shop_block.variable-sizes .tovar_wrapper {width:100%; padding-right:0;}
 	.shop_block.variable-sizes .tovar_img {width:160px; text-align:left;}
 	.shop_block.variable-sizes .tovar_title {width:100%;}
 	.shop_block.variable-sizes .tovar_description {width:304px;}
 	.shop_block.variable-sizes .tovar_item_btns {width:180px;}
 	.variable-sizes .tovar_img_wrapper {height:240px !important;}
-	
+
 	.tovar_description {min-height:80px;}
-	
-	
+
+
 	.shop .top_sale_banners .banner {width:100%;}
-	
-	
+
+
 	/* __________ Product Details __________ */
 	.open-project-link {display:none !important;}
-	
-	
+
+
 	.tovar_view_fotos {float:none; width:450px; margin:0 auto 30px;}
 	.tovar_view_description {float:none; width:100%;}
-	
-	
-	
+
+
+
 	/* __________ Modal __________ */
 	#tovar_content {width:750px;}
-	
-	
-	
+
+
+
 	/* __________ Love List __________ */
 	table tr.cart_item td.product-thumbnail {width:70px;}
 	table tr.cart_item td.product-thumbnail a img {width:60px;}
@@ -5370,12 +5370,12 @@ input[type="submit"]:hover {background-color:#242424;}
 	table tr.cart_item td.product-name {width:200px;}
 	table tr.cart_item td.product-add-bag {width:50px;}
 	table tr.cart_item td.product-remove span {display:none;}
-	
-	
+
+
 	/* __________ Shopping Bag __________ */
 	.widget_bag_totals .btn {padding-left:5px; padding-right:5px;}
-	
-	
+
+
 	/* __________ Product Catalog __________ */
 	.product_catalog_item img {width:100px; margin-right:10px;}
 	.product_catalog_title {font-size:20px; line-height:22px;}
@@ -5383,31 +5383,31 @@ input[type="submit"]:hover {background-color:#242424;}
 	.product_catalog_list li {padding-top:0;}
 	.product_catalog_list li:before {top:1px;}
 	.product_catalog_list li a {display:block; font-size:9px; line-height:15px;}
-	
-	
+
+
 	/* __________ Brands List __________ */
 	.brand_letter {font-size:60px; line-height:60px; margin-right:10px; width:55px;}
 	.brands_list_block .product_catalog_list {padding-left:50px;}
 	.brands_list_block .product_catalog_list li {padding-top:0;}
 	.brands_list_block .product_catalog_list li:before {top:4px;}
 	.brands_list_block .product_catalog_list li a {font-size:10px;}
-	
-	
-	
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	ABOUT PAGE
 /*-----------------------------------------------------------------------------------*/
 	.about_us_description p {font-size:18px; line-height:22px;}
 	.about_us_description span {font-size:11px; line-height:17px; margin-bottom:10px;}
-	
-	
-	
+
+
+
 	/* __________ Breadcrumbs __________ */
 	.breadcrumb {min-height:110px; border-bottom-width:30px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SITE UPDATE
 /*-----------------------------------------------------------------------------------*/
@@ -5415,8 +5415,8 @@ input[type="submit"]:hover {background-color:#242424;}
 	.update_wrapper h1 {font-size:70px; line-height:70px;}
 	.update_wrapper h2 {font-size:24px; line-height:26px; margin-bottom:10px; padding-bottom:10px;}
 	.update_wrapper p {font-size:13px; line-height:20px; margin-bottom:20px;}
-	
-	
+
+
 	/* __________ Clock __________ */
 	.flip-clock-wrapper ul {width:30px; height:61px;}
 	.flip-clock-wrapper ul li a div.up:after {top:30px;}
@@ -5432,19 +5432,19 @@ input[type="submit"]:hover {background-color:#242424;}
 	.flip-clock-divider.hours .flip-clock-label {right:-54px;}
 	.flip-clock-divider.minutes .flip-clock-label {right:-60px;}
 	.flip-clock-divider.seconds .flip-clock-label {right:-61px;}
-	
-	
-	
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	CONTACT PAGE
 /*-----------------------------------------------------------------------------------*/
 	#ajax-contact-form textarea {min-height:168px;}
-	
+
 	#map iframe {height:300px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	PAGE 404
 /*-----------------------------------------------------------------------------------*/
@@ -5453,8 +5453,8 @@ input[type="submit"]:hover {background-color:#242424;}
 	.wrapper404 h1 {font-size:70px; line-height:70px;}
 	.wrapper404 h2 {font-size:24px; line-height:26px; margin-bottom:10px; padding-bottom:10px;}
 	.wrapper404 p {font-size:13px; line-height:20px; margin-bottom:20px;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	ARTICLES
@@ -5462,63 +5462,63 @@ input[type="submit"]:hover {background-color:#242424;}
 	.article_large .article_image {width:280px; margin:0 10px 5px 0;}
 	.article_large .article_title {line-height:20px; font-size:16px;}
 	.article_small .article_title {font-size:14px; line-height:20px;}
-	
-	
+
+
 	/* __________ Single Article __________ */
 	.article_single .article_image {width:370px; padding-left:10px;}
 	.article_single_caption {width:109px; height:146px; padding:0 8px;}
 	.article_single_caption p {font-size:12px; line-height:17px;}
 	.article_single_content h3 {float:none; width:100%; font-size:17px; line-height:22px;}
 	.article_single_content blockquote {width:74%; float:none;}
-	
+
 	.flexslider.article_slider {width:280px; margin:0 20px 10px 0;}
-	
-	
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	CHECOUT
 /*-----------------------------------------------------------------------------------*/
 	.checkout_nav li {font-size:12px; line-height:17px; padding-left:20px; min-height:60px; vertical-align:top;}
-	
+
 	.checkout_form_input {width:180px; margin-right:15px;}
 	.checkout_form .country .fancy-select .trigger {width:180px;}
 	.checkout_form_input2 {margin-right:15px; width:180px;}
-	
+
 	.checkout_delivery li {width:43%; margin-right:20px;}
-	
+
 	.credit_card_number {width:111px;}
 	.payment_method {width:275px;}
 	.payment_method li {width:125px; padding-bottom:20px;}
 	.checkout_block input[type="radio"] + label img {width:100%;}
-	
+
 	.checkout_confirm_orded_bordright {float:none; border-right:0; border-bottom:1px solid #e9e9e9; margin-bottom:20px;}
 	.billing_information {width:150px;}
 	.checkout_confirm_orded_products {float:none; margin:0; width:100%;}
-	
-	
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	BLOG
 /*-----------------------------------------------------------------------------------*/
 	.post.large_image .post_title {font-size:24px; line-height:28px;}
 	.post .post_title {font-size:16px; line-height:20px;}
-	
+
 	.post .post_image {width:200px; margin-right:20px;}
-	
+
 	#comment_form input[type="text"] {width:48.5%;}
 	#comment_form .comment_note {display:inline-block; width:45%; padding:0;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	SHORTCODES
 /*-----------------------------------------------------------------------------------*/
 	.shortcodes_buttons .btn {margin-bottom:10px;}
-	
-	
+
+
 	.price_item .btn {width:150px;}
 	.price_item_text {padding:7px 5px 5px;}
-	
-	
+
+
 	/* __________ My Accoont __________ */
 	.my_account {padding-top:150px;}
 	.my_account_block .login, .my_account_block .new_customers {padding:20px 15px;}
@@ -5527,108 +5527,108 @@ input[type="submit"]:hover {background-color:#242424;}
 	.my_account_block .new_customers p {line-height:18px; font-size:10px;}
 	.my_account_block .new_customers li {line-height:20px;}
 	.my_account_note {font-size:24px; line-height:26px;}
-	
-	
-	
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	FOOTER
 /*-----------------------------------------------------------------------------------*/
 	footer .newsletter_btn {width:20%;}
 	footer .newsletter_form input[type="text"] {width:78%;}
-	
-	
-	
+
+
+
 }
 
 @media (max-width: 479px) {
 	.logo {width:89px;}
-	
-	
+
+
 	.top_search_btn {padding:13px;}
 	.shopping_bag .shopping_bag_btn, .love_list .love_list_btn {padding:13px 5px;}
 	.love_list, .shopping_bag {position:static;}
 	.menu_block {position:relative;}
 	.cart {left:0; right:0; width:100%;}
-	
+
 	.menu_toggler {width:40px; height:46px; line-height:46px;}
-	
+
 	.navmenu {top:46px;}
 	.navmenu li ul.mega_menu li.col {width:100%;}
-	
-	
+
+
 	.services_section_description p {font-size:24px; line-height:26px;}
-	
-	
+
+
 	.recent_post_img {width:160px;}
-	
-	
+
+
 	.top_sale_description {padding:130px 0 30px;}
 	.top_sale_description p {font-size:30px; line-height:30px;}
 	.top_sale_description span {font-size:16px; line-height:20px;}
-	
-	
+
+
 	.video_wrapper {width:290px; height:143px;}
-	
-	
+
+
 	.best_products .jcarousel li {width:290px;}
-	
-	
+
+
 	.sale_caption1 {top:70%;}
 	.sale_caption1 .title1 {font-size:30px; line-height:30px;}
 	.sale_caption1 .title2 {font-size:14px; line-height:20px;}
-	
-	
+
+
 	.breadcrumb h2 {font-size:40px; line-height:40px;}
-	
-	
+
+
 	.widget_banners a {width:91px;}
-	
-	
+
+
 	.count_tovar_items, .product_sort {display:block; width:100%; text-align:left; padding-bottom:10px;}
-	
-	
+
+
 	.pagination li {margin-bottom:10px;}
-	
-	
+
+
 	.shop_block.variable-sizes .tovar_img {width:120px;}
 	.shop_block.variable-sizes .tovar_description {width:184px;}
 	.tovar_content {font-size:10px; line-height:13px;}
-	
-	
+
+
 	.tovar_view_fotos {width:290px;}
 	#slider1, #slider2 {padding-right:40px;}
 	#carousel1, #carousel2 {width:50px;}
 	#carousel1 .slides li, #carousel2 .slides li {width:50px; height:75px;}
 	.tovar_view_title {font-size:24px; line-height:26px;}
 	.tovar_information .tabs li {font-size:12px; padding-left:13px; padding-right:13px;}
-	
-	
+
+
 	.my_account_block .login {float:none; width:100%; padding:10px 10px 20px; border-bottom:1px solid #ccc;}
 	.new_customers {width:100% !important; float:none !Important; padding:10px;}
-	
-	
+
+
 	.product_catalog_item {padding-bottom:20px;}
-	
-	
+
+
 	.article_single .article_image {width:100%; float:none;}
 	.article_single_caption {float:none; margin:0 0 20px; width:100%; height:90px;}
 	.article_single_content h3 {padding-left:0;}
 	.flexslider.article_slider {width:100%; margin-right:0; float:none;}
-	
-	
+
+
 	.checkout_nav li {font-size:10px; line-height:13px; min-height:66px;}
 	.checkout_delivery li {width:100%; margin:0 0 20px;}
 	.credit_card_number {width:100%; float:none; padding-bottom:40px !important;}
 	.payment_method {width:100%; float:none;}
 	.credit_card_number_form div.fancy-select div.trigger {width:104px;}
-	
-	
+
+
 	#accordion h4.accordion_title {font-size:16px; line-height:20px; padding:13px 0 13px 40px;}
 	#accordion h4.accordion_title:before {width:25px; height:25px; font-size:16px; line-height:21px;}
 	#accordion .accordion_content {font-size:11px; line-height:17px; padding-left:40px;}
 	#accordion .accordion_content p {margin-bottom:15px;}
-	
-	
+
+
 	.post .post_image {width:150px; margin:0 10px 5px 0;}
 	.blog_post_content {padding-top:10px;}
 	.blog_post_content h3 {font-size:14px; line-height:20px;}
@@ -5641,17 +5641,17 @@ input[type="submit"]:hover {background-color:#242424;}
 	#comments ol li ul li {padding-left:30px;}
 	#comment_form input[type="text"] {width:100%;}
 	#comment_form .comment_note {width:100%; display:block; padding-bottom:20px;}
-	
-	
+
+
 	.brands_carousel .jcarousel {left:24px; width:242px;}
-	
-	
+
+
 	footer .newsletter_form input[type="text"] {width:65%;}
 	footer .newsletter_btn {width:31%;}
-	
-	
+
+
 	.social a {width:36px; height:36px; line-height:32px;}
-	
+
 
 
 /* __________ Bootstrap Style __________ */
@@ -5670,6 +5670,13 @@ input[type="submit"]:hover {background-color:#242424;}
 	.col-ss-1 {width: 8.333333333333332%;}
 
 }
+
+/* My style khoand 28/01/2018*/
+
+.container.clearfix .dropdown {
+  float: left;
+}
+
 
 
 

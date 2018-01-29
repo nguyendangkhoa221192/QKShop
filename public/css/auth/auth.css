@@ -1,0 +1,23 @@
+.my_account .title {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0 0 39px;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 30px 28px;
+}
+
+@media (max-width: 767px) {
+
+  .my_account .title {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    margin: 0 0 39px;
+    font-weight: 900;
+    font-size: 24px;
+    padding: 22px 20px;
+  }
+
+}
