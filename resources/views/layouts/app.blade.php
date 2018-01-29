@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
+
 <!-- CSS -->
 	<link href="{{ asset('css/Common/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
 	<link href="{{ asset('css/Common/flexslider.css') }}" rel="stylesheet" type="text/css" />
 	<link href="{{ asset('css/Common/fancySelect.css') }}" rel="stylesheet" media="screen, projection" />
 	<link href="{{ asset('css/Common/animate.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<link href="{{ asset('css/Common/style.css') }}" rel="stylesheet" type="text/css" />
-	
+
 	<!-- FONTS -->
 	<link href="{{ asset('css/Common/ggapifonts.css') }}" type='text/css' rel="stylesheet" >
 	<link href="{{ asset('css/Common/font-awesome/css/font-awesome.min.css') }}" type="text/css" rel="stylesheet">
@@ -35,7 +35,7 @@
 
 <body>
 	<div id="preloader"><img src="images/preloader.gif" alt="" /></div>
-	@include('layouts.header')
+		@include('layouts.header')
     @yield('content')
     @include('layouts.footer')
 </body>
