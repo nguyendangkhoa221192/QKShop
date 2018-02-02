@@ -10,6 +10,10 @@ class HomeController extends Controller
     public function index()
     {
     	$title = 'Home Controller';
-    	return view('home.index', ['title' => $title]);
+      $top_silder = null;
+    	return view('home.index', [
+        'title' => $title,
+        'top_silder' => $top_silder,
+      ]);
     }
 }
