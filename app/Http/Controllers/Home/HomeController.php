@@ -11,12 +11,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-      $top_silder = TopSliderGroup::find(1)->top_silders();
+      $top_silder = TopSliderGroup::find(2);
       // $top_silder = TopSliderGroup::all();
       $top = TopSlider::all();
     	$title = 'Home Controller';
       
-      dd($top_silder);
+      // dd($top_silder->top_silders);
       // $top_silder = null;
     	return view('home.index', [
         'title' => $title,
