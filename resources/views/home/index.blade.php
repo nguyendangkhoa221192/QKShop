@@ -3,6 +3,7 @@
 @section('title', $title)
 
 @section('content')
+	{{-- <script src="{{ asset('js/home/loadajax.js') }}"></script> --}}
 	<div id="page">
 		{{-- include layout Featured --}}
 		@include('home.top_slider')
