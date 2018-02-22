@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
         $temp = 1;
         for ($i = 1; $i <= 9; $i++) {
           DB::table('top_sliders')->insert([
-            "imageUrl" => "Slider_Item_Title " . $i,
+            "imageUrl" => "images/slider/slide1_baner" . $temp . ".jpg",
             "top_slider_groups_id" => $temp,
             "redirectUrl" => $i,
           ]);

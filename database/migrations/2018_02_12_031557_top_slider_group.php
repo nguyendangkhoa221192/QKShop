@@ -15,7 +15,8 @@ class TopSliderGroup extends Migration
     {
         Schema::create('top_slider_groups', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titleSilderItem')->collation('utf8_unicode_ci');
+            $table->string('titleSilderItemAbove')->collation('utf8_unicode_ci');
+            $table->string('titleSilderItemBelow')->collation('utf8_unicode_ci');
             $table->string('imageUrl')->collation('utf8_unicode_ci');
             $table->string('redirectUrl')->nullable($value = true)->collation('utf8_unicode_ci');
             $table->timestamps();

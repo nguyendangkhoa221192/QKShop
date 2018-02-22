@@ -271,9 +271,9 @@ a.slide_banner {
 	margin:0 12px 0 15px;
 	background-color:#000;
 }
-/* .slide1_banner1 {width:270px;}
+.slide1_banner1 {width:270px;}
 .slide1_banner2 {width:270px;}
-.slide1_banner3 {width:570px;} */
+.slide1_banner3 {width:570px;}
 a.slide_banner img {
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -407,7 +407,7 @@ a.slide_banner:hover:before {
 	
 	.slide1_banner1, .slide1_banner2 {width:220px;}
 	.slide1_banner3 {width:470px;}
-	.top_slider .slide1 .flex_caption3, .top_slider .slide2 .flex_caption3, .top_slider .slide3 .flex_caption3 {bottom:30px;}
+	.top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3 {bottom:30px;}
 
 	
 	
@@ -419,16 +419,16 @@ a.slide_banner:hover:before {
 	
 	.slide1_banner1, .slide1_banner2 {width:168px;}
 	.slide1_banner3 {width:356px;}
-	.top_slider .slide1 .flex_caption3, .top_slider .slide2 .flex_caption3, .top_slider .slide3 .flex_caption3 {bottom:30px;}
+	.top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3 {bottom:30px;}
 	
 	
-	.top_slider .slide1 .flex_caption1 .title1, .top_slider .slide2 .flex_caption1 .title1, .top_slider .slide3 .flex_caption1 .title1 {font-size:60px; line-height:60px;}
-	.top_slider .slide1 .flex_caption1 .title2, .top_slider .slide2 .flex_caption1 .title2, .top_slider .slide3 .flex_caption1 .title2 {font-size:24px; line-height:28px;}
+	.top_slider .slide_item .flex_caption1 .title1, .top_slider .slide_item .flex_caption1 .title1, .top_slider .slide_item .flex_caption1 .title1 {font-size:60px; line-height:60px;}
+	.top_slider .slide_item .flex_caption1 .title2, .top_slider .slide_item .flex_caption1 .title2, .top_slider .slide_item .flex_caption1 .title2 {font-size:24px; line-height:28px;}
 	
 	
-	.top_slider .slide1 .flex_caption2, .top_slider .slide2 .flex_caption2, .top_slider .slide3 .flex_caption2 {top:30%; right:10px; height:100px; width:100px;}
-	.top_slider .slide1 .flex_caption2 .middle, .top_slider .slide2 .flex_caption2 .middle, .top_slider .slide3 .flex_caption2 .middle {font-size:14px; line-height:17px;}
-	.top_slider .slide1 .flex_caption2 span, .top_slider .slide2 .flex_caption2 span, .top_slider .slide3 .flex_caption2 span {font-size:20px; line-height:22px;}
+	.top_slider .slide_item .flex_caption2, .top_slider .slide_item .flex_caption2, .top_slider .slide_item .flex_caption2 {top:30%; right:10px; height:100px; width:100px;}
+	.top_slider .slide_item .flex_caption2 .middle, .top_slider .slide_item .flex_caption2 .middle, .top_slider .slide_item .flex_caption2 .middle {font-size:14px; line-height:17px;}
+	.top_slider .slide_item .flex_caption2 span, .top_slider .slide_item .flex_caption2 span, .top_slider .slide_item .flex_caption2 span {font-size:20px; line-height:22px;}
 	
 	
 }
@@ -440,25 +440,25 @@ a.slide_banner:hover:before {
 	.top_slider .flex_caption3 {left:15px !Important; text-align:center !important;}
 	.slide1_banner1, .slide1_banner2 {width:102px; margin:0 2px 0 5px !important;}
 	.slide1_banner3 {width:215px;  margin:0 2px 0 5px !important;}
-	.top_slider .slide1 .flex_caption3, .top_slider .slide2 .flex_caption3, .top_slider .slide3 .flex_caption3 {bottom:30px;}
+	.top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3 {bottom:30px;}
 	
 	.top_slider .flex_caption1 {top:40% !important; left:15px !Important;}
 	
 	.top_slider .flex_caption2 {top:40% !important; right:25px !important;}
 	
 	
-	.top_slider .slide1 .flex_caption1 .title1, .top_slider .slide2 .flex_caption1 .title1, .top_slider .slide3 .flex_caption1 .title1 {font-size:60px; line-height:60px;}
-	.top_slider .slide1 .flex_caption1 .title2, .top_slider .slide2 .flex_caption1 .title2, .top_slider .slide3 .flex_caption1 .title2 {font-size:24px; line-height:28px;}
+	.top_slider .slide_item .flex_caption1 .title1, .top_slider .slide_item .flex_caption1 .title1, .top_slider .slide_item .flex_caption1 .title1 {font-size:60px; line-height:60px;}
+	.top_slider .slide_item .flex_caption1 .title2, .top_slider .slide_item .flex_caption1 .title2, .top_slider .slide_item .flex_caption1 .title2 {font-size:24px; line-height:28px;}
 	
 	
-	.top_slider .slide1 .flex_caption2, .top_slider .slide2 .flex_caption2, .top_slider .slide3 .flex_caption2 {top:30%; right:10px; height:100px; width:100px;}
-	.top_slider .slide1 .flex_caption2 .middle, .top_slider .slide2 .flex_caption2 .middle, .top_slider .slide3 .flex_caption2 .middle {font-size:14px; line-height:17px;}
-	.top_slider .slide1 .flex_caption2 span, .top_slider .slide2 .flex_caption2 span, .top_slider .slide3 .flex_caption2 span {font-size:20px; line-height:22px;}
+	.top_slider .slide_item .flex_caption2, .top_slider .slide_item .flex_caption2, .top_slider .slide_item .flex_caption2 {top:30%; right:10px; height:100px; width:100px;}
+	.top_slider .slide_item .flex_caption2 .middle, .top_slider .slide_item .flex_caption2 .middle, .top_slider .slide_item .flex_caption2 .middle {font-size:14px; line-height:17px;}
+	.top_slider .slide_item .flex_caption2 span, .top_slider .slide_item .flex_caption2 span, .top_slider .slide_item .flex_caption2 span {font-size:20px; line-height:22px;}
 	
 }
 
 @media (max-width: 479px) {
-	.top_slider .slide1 .flex_caption3, .top_slider .slide2 .flex_caption3, .top_slider .slide3 .flex_caption3 {display:none;}
+	.top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3, .top_slider .slide_item .flex_caption3 {display:none;}
 	
 	
 	.flexslider.top_slider .slides li {height:260px;}
@@ -467,7 +467,7 @@ a.slide_banner:hover:before {
 	.top_slider .flex_caption1 {top:50% !important;}
 	.top_slider .flex_caption1 .title1 {font-size:30px !important; line-height:30px !important;}
 	.top_slider .flex_caption1 .title2 {font-size:16px !important; line-height:20px !important; padding-left:0 !important;}
-	.top_slider .slide1 .flex_caption2, .top_slider .slide2 .flex_caption2, .top_slider .slide3 .flex_caption2 {top:50% !important;}
+	.top_slider .slide_item .flex_caption2, .top_slider .slide_item .flex_caption2, .top_slider .slide_item .flex_caption2 {top:50% !important;}
 	
 	
 }

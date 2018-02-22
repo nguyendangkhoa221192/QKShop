@@ -47,9 +47,7 @@
                           <div class="form-group">
                               <div class="col-md-6 col-md-offset-4">
                                   <div class="checkbox">
-                                      <label>
-                                          <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                      </label>
+                                      <input type="checkbox" id="categorymanufacturer1"><label for="categorymanufacturer1" style="border: none">Keep me signed</label>
                                   </div>
                               </div>
                           </div>
