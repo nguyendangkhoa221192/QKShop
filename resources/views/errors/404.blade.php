@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Glammy | Modern eCommerce html Template')
+@section('title', 'Not found!')
 
 @section('content')
 <div class="preloader_hide">
