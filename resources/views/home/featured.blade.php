@@ -13,7 +13,7 @@
         
       @foreach ($featureds as $item)
         @php
-          $image = explode(";", $item->imageUrl);
+          $image = explode(";", $item->image_url);
         @endphp
         <!-- TOVAR1 -->
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-ss-12 padbot40">
@@ -30,8 +30,8 @@
               </div>
             </div>
             <div class="tovar_description clearfix">
-              <a class="tovar_title" href="product-page.html" >{{ $item->productName or ""}}</a>
-              <span class="tovar_price">{{ "$" . $item->productPrice or ""}}</span>
+              <a class="tovar_title" href="product-page.html" >{{ $item->product_name or ""}}</a>
+              <span class="tovar_price">${{ $item->product_price or "" }}</span>
             </div>
           </div>
         </div><!-- //TOVAR1 -->

@@ -18,7 +18,7 @@
         <ul>
           @foreach ($arrivals as $item)
             @php
-              $image = explode(";", $item->imageUrl);
+              $image = explode(";", $item->image_url);
             @endphp
             <li>
               <!-- TOVAR -->
@@ -28,8 +28,8 @@
                   <div class="open-project-link"><a class="open-project tovar_view" href="javascript:void(0);" data-url="!projects/women/1.html" >quick view</a></div>
                 </div>
                 <div class="tovar_description clearfix">
-                  <a class="tovar_title" href="product-page.html" >{{ $item->productName or "" }}</a>
-                  <span class="tovar_price">{{ $item->productPrice or "" }}</span>
+                  <a class="tovar_title" href="product-page.html" >{{ $item->product_name or "" }}</a>
+                  <span class="tovar_price">{{ $item->product_price or "" }}</span>
                 </div>
               </div>
               <!-- //TOVAR -->

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TopSlider extends Migration
+class CreateBillDetailTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class TopSlider extends Migration
      */
     public function up()
     {
-        Schema::create('top_sliders', function (Blueprint $table) {
+        Schema::create('bill_detail', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('image_url')->collation('utf8_unicode_ci');
-            $table->string('redirect_url')->nullable($value = true)->collation('utf8_unicode_ci');
-            $table->integer('top_slider_groups_id');
+            $table->integer('id_bill');
+            $table->integer('id_product');
+            $table->integer('quantity');
+            $table->double('unit_price', 12, 2);
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class TopSlider extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('top_sliders');
+        Schema::dropIfExists('bill_detail');
     }
 }

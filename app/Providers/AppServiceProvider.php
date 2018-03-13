@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\Utils\Cart;
+
 
 class AppServiceProvider extends ServiceProvider
 {

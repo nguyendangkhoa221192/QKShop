@@ -15,18 +15,9 @@
 
       <div class="jcarousel" data-appear-top-offset='-100' data-animated='fadeInUp'>
         <ul>
-          <li><a href="javascript:void(0);" ><img src="images/brands/1.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/2.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/3.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/4.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/5.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/6.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/7.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/8.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/9.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/10.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/11.jpg" alt="" /></a></li>
-          <li><a href="javascript:void(0);" ><img src="images/brands/12.jpg" alt="" /></a></li>
+          @foreach ($brands as $item)
+            <li><a href="{{ $item->home_page_url or "" }}" target="_blank" ><img src="{{ $item->image_url or "" }}" alt="" /></a></li>
+          @endforeach
         </ul>
       </div>
     </div><!-- //JCAROUSEL -->
