@@ -25,7 +25,7 @@
               <div class="tovar_item_new">
                 <div class="tovar_img">
                   <img src="{{ $image[0] or "" }}" alt="" />
-                  <div class="open-project-link"><a class="open-project tovar_view" href="javascript:void(0);" data-url="!projects/women/1.html" >quick view</a></div>
+                  <div class="open-project-link"><a class="open-project tovar_view" href="javascript:void(0);" data-url="!projects/shoes/2.html" >quick view</a></div>
                 </div>
                 <div class="tovar_description clearfix">
                   <a class="tovar_title" href="product-page.html" >{{ $item->product_name or "" }}</a>

@@ -26,6 +26,7 @@
 	<script src="{{ asset('js/Common/fancySelect.js') }}"></script>
 	<script src="{{ asset('js/Common/animate.js') }}" type="text/javascript"></script>
 	<script src="{{ asset('js/Common/myscript.js') }}" type="text/javascript"></script>
+	<script src="{{ asset('js/Common/handleShoppingBag.js') }}" type="text/javascript"></script>
 	<script>
 		if (top != self) top.location.replace(self.location.href);
 	</script>

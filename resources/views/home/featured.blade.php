@@ -10,10 +10,11 @@
 
       <!-- TOVAR WRAPPER -->
       <div class="tovar_wrapper" data-appear-top-offset='-100' data-animated='fadeInUp'>
-        
-      @foreach ($featureds as $item)
+<input type="button" id="clickme" onclick="showMessage(this)" value="Click Me" />
+
+        @foreach ($featureds as $item)
         @php
-          $image = explode(";", $item->image_url);
+        $image = explode(";", $item->image_url);
         @endphp
         <!-- TOVAR1 -->
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-ss-12 padbot40">
@@ -25,7 +26,9 @@
               </div>
               <div class="tovar_item_btns">
                 <div class="open-project-link"><a class="open-project tovar_view" href="javascript:void(0);" data-url="!projects/women/1.html" >quick view</a></div>
-                <a class="add_bag" href="javascript:void(0);" ><i class="fa fa-shopping-cart"></i></a>
+
+                <a class="add_bag" data-id="{{ $item->id }}" href="javascript:void(0);" ><i class="fa fa-shopping-cart"></i></a>
+
                 <a class="add_lovelist" href="javascript:void(0);" ><i class="fa fa-heart"></i></a>
               </div>
             </div>
@@ -35,7 +38,7 @@
             </div>
           </div>
         </div><!-- //TOVAR1 -->
-      @endforeach
+        @endforeach
 
         <div class="respond_clear_768"></div>
 

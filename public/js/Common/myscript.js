@@ -178,14 +178,14 @@ $(window).load(function() {
 			$('#modal-body').addClass('modal-active');
 			if ($(this).hasClass('active')){
 			} 
-			else { 
+			else {
 				lastIndex = index;
 				index = $(this).index();
 				$items.removeClass('active');
 				$(this).addClass('active');
 	
 				var myUrl = $(this).find('.open-project').attr("data-url") + " .tover_view_page"; 
-		  
+				
 				$('#tovar_content').animate({opacity:0},function(){
 					$("#tovar_content").load(myUrl,function(e){
 						

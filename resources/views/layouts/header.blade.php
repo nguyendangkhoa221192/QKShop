@@ -63,6 +63,9 @@
 				<a class="shopping_bag_btn" href="javascript:void(0);" ><i class="fa fa-shopping-cart"></i><p>shopping bag</p><span>0</span></a>
 				<div class="cart">
 					<ul class="cart-items">
+
+						<li>Cart is empty</li>
+
 						{{-- <li class="clearfix">
 							<img class="cart_item_product" src="{{ asset ('images/tovar/women/1.jpg') }}" alt="" />
 							<a href="product-page.html" class="cart_item_title">popover sweatshirt in floral jacquard</a>
@@ -99,12 +102,14 @@
 
 			<!-- MENU -->
 			<ul class="navmenu center">
-				<li class="sub-menu first active"><a href="javascript:void(0);" >Home</a>
+				{{-- <li class="sub-menu first active"><a href="javascript:void(0);" >Home</a> --}}
+					<li class="sub-menu first"><a href="javascript:void(0);" >Home</a>
 					<!-- MEGA MENU -->
 					<ul class="mega_menu megamenu_col1 clearfix">
 						<li class="col">
 							<ol>
-								<li class="active"><a href="index.html" >Home slider</a></li>
+								{{-- <li class="active"><a href="index.html" >Home slider</a></li> --}}
+								<li><a href="index.html" >Home slider</a></li>
 								<li><a href="index2.html" >Home men promo</a></li>
 								<li><a href="index3.html" >Home kids</a></li>
 								<li><a href="index4.html" >Home video</a></li>
