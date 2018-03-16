@@ -1,8 +1,10 @@
-window.jQuery = window.$ = jQuery;
+// window.jQuery = window.$ = jQuery;
 
 jQuery(document).ready(function() {
-	$('.add_bag').click(function(event) {
-		var id_product = $('.add_bag').attr("data-id");
+  // Event click for add product to bags
+	$('.add_bag.btn-add-to-bags').click(function(event) {
+		var id_product = $(this).data('id');
 		console.log(id_product);
 	});
+  
 });
