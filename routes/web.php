@@ -22,4 +22,8 @@ Route::prefix('/account')->group(function() {
 Auth::routes();
 
 Route::get('/home', 'Home\HomeController@index')->name('home');
-Route::get('/topic', 'Home\TopSliderController@index')->name('test');
+
+Route::group(['prefix' => 'shopping'], function() {
+    Route::match(['get', 'post'], 'cart', 'Home\HomeController@buyProduct')->name('shoppingCart');
+    Route::match(['get', 'post'], 'lovelist', 'Home\HomeController@lovelist')->name('loveList');
+});

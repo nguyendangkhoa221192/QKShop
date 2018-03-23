@@ -26,9 +26,9 @@
               <div class="tovar_item_btns">
                 <div class="open-project-link"><a class="open-project tovar_view" href="javascript:void(0);" data-url="!projects/women/1.html" >quick view</a></div>
 
-                <a class="add_bag btn-add-to-bags" data-id="{{ $item->id }}" href="javascript:void(0);" ><i class="fa fa-shopping-cart"></i></a>
+                <a class="add_bag btn-add-to-bags" data-id="{{ $item->id }}" href="javascript:void(0);" data-_token="{{ csrf_token() }}" ><i class="fa fa-shopping-cart"></i></a>
 
-                <a class="add_lovelist" href="javascript:void(0);" ><i class="fa fa-heart"></i></a>
+                <a class="add_lovelist btn-add-to-lovelist" data-id="{{ $item->id }}" href="javascript:void(0);" data-_token="{{ csrf_token() }}" ><i class="fa fa-heart"></i></a>
               </div>
             </div>
             <div class="tovar_description clearfix">

@@ -5677,8 +5677,11 @@ input[type="submit"]:hover {background-color:#242424;}
   float: left;
 }
 
-
-
+/* Scroll shopping bag */
+.shopping_bag .cart-items{
+	max-height: 500px;
+	overflow: auto;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	Magnific Popup CSS
