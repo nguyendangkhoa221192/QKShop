@@ -6,7 +6,7 @@ window.jQuery = window.$ = jQuery;
 // 		var id_product = $(this).data('id');
 // 		console.log(id_product);
 // 	});
-  
+
 // });
 
 
@@ -66,4 +66,64 @@ $(document).ready(function() {
 			// console.log(e.test);
 		});
 	});
+});
+
+/*-----------------------------------------------------------------------------------*/
+/*	Handle action in shopping bag
+/*-----------------------------------------------------------------------------------*/
+
+function changeQty(argument) {
+	var data = argument.value;
+	$.ajax({
+		headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    },
+		url: '/shopping/cart/update',
+		type: 'POST',
+		data: {
+			data: data
+		},
+	})
+	.done(function() {
+		// console.log("success");
+	})
+	.fail(function() {
+		// console.log("error");
+	})
+	.always(function() {
+		// console.log("complete");
+	});
+	
+}
+
+$(document).on('click', '.product-remove', function(event) {
+	event.preventDefault();
+	/* Act on the event */
+	var rowid = $(this).data('rowid');
+	var _token = $(this).data('_token');
+	$.ajax({
+		headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    },
+		url: '/shopping/cart/remove',
+		type: 'POST',
+		data: {
+			rowid: rowid,
+			_token: _token
+		},
+	})
+	.done(function(result) {
+		console.log(result['isSuccess']);
+		console.log(result['total']);
+		$('.' + rowid).remove();
+		$('.bag_total .total td').html('$' + result['total']);
+		$('.bag_total .cart-subtotal td').html('$' + result['subtotal']);
+	})
+	.fail(function($error) {
+		// console.log($error);
+		// console.log('Error, Please try again!');
+	})
+	.always(function() {
+	});
+	
 });

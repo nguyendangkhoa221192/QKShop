@@ -3,6 +3,7 @@
 @section('title', $title)
 
 @section('content')
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- //PRELOADER -->
 <div class="preloader_hide">
 
@@ -51,90 +52,33 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr class="cart_item">
-									<td class="product-thumbnail"><a href="product-page.html" ><img src="{{ asset('images/tovar/women/1.jpg') }}" width="100px" alt="" /></a></td>
+								@foreach ($shopping_bag->content() as $item)
+								<tr class="cart_item {{ $item->rowId }}">
+									<td class="product-thumbnail"><a href="product-page.html" ><img src="{{ asset($item->options->img) }}" width="100px" alt="" /></a></td>
 									<td class="product-name">
-										<a href="product-page.html">Embroidered bib peasant top</a>
+										<a href="product-page.html">{{ $item->name }}</a>
 										<ul class="variation">
 											<li class="variation-Color">Color: <span>Brown</span></li>
 											<li class="variation-Size">Size: <span>XS</span></li>
 										</ul>
 									</td>
 
-									<td class="product-price">$88.00</td>
+									<td class="product-price">${{ $item->price }}</td>
 
 									<td class="product-quantity">
-										<select class="basic">
-											<option value="">2</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
+										<select class="basic" onchange="changeQty(this)" >
+											<option value="">{{ $item->qty }}</option>
+											@for ($i = 1; $i <= 20 ; $i++)
+												<option value='{{ $i }}|{{ $item->rowId }}'>{{ $i }}</option>
+											@endfor
 										</select>
 									</td>
 									
-									<td class="product-subtotal">$176.00</td>
+									<td class="product-subtotal">${{ $item->total }}</td>
 
-									<td class="product-remove"><a href="javascript:void(0);" ><span>Delete</span> <i>X</i></a></td>
+									<td class="product-remove" data-rowid="{{ $item->rowId }}"><a href="javascript:void(0);" ><span>Delete</span> <i>X</i></a></td>
 								</tr>
-								
-								<tr class="cart_item">
-									<td class="product-thumbnail"><a href="product-page.html" ><img src="{{ asset('images/tovar/women/2.jpg') }}" width="100px" alt="" /></a></td>
-									<td class="product-name">
-										<a href="product-page.html">Merino tippi sweater in geometric stripe</a>
-										<ul class="variation">
-											<li class="variation-Color">Color: <span>Brown</span></li>
-											<li class="variation-Size">Size: <span>XS</span></li>
-										</ul>
-									</td>
-
-									<td class="product-price">$96.00</td>
-
-									<td class="product-quantity">
-										<select class="basic">
-											<option value="">1</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</td>
-									
-									<td class="product-subtotal">$96.00</td>
-
-									<td class="product-remove"><a href="javascript:void(0);" ><span>Delete</span> <i>X</i></a></td>
-								</tr>
-								
-								<tr class="cart_item">
-									<td class="product-thumbnail"><a href="product-page.html" ><img src="{{ asset('images/tovar/women/3.jpg') }}" width="100px" alt="" /></a></td>
-									<td class="product-name">
-										<a href="product-page.html">Collection cashmere getaway hoodie</a>
-										<ul class="variation">
-											<li class="variation-Color">Color: <span>Brown</span></li>
-											<li class="variation-Size">Size: <span>XS</span></li>
-										</ul>
-									</td>
-
-									<td class="product-price">$88.00</td>
-
-									<td class="product-quantity">
-										<select class="basic">
-											<option value="">3</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</td>
-									
-									<td class="product-subtotal">$264.00</td>
-
-									<td class="product-remove"><a href="javascript:void(0);" ><span>Delete</span> <i>X</i></a></td>
-								</tr>
-								
+								@endforeach
 							</tbody>
 						</table>
 					</div><!-- //CART TABLE -->
@@ -149,7 +93,7 @@
 							<table class="bag_total">
 								<tr class="cart-subtotal clearfix">
 									<th>Sub total</th>
-									<td>$258.00</td>
+									<td>${{ $shopping_bag->subtotal() }}</td>
 								</tr>
 								<tr class="shipping clearfix">
 									<th>SHIPPING</th>
@@ -157,7 +101,7 @@
 								</tr>
 								<tr class="total clearfix">
 									<th>Total</th>
-									<td>$528.00</td>
+									<td>${{ $shopping_bag->total() }}</td>
 								</tr>
 							</table>
 							<form class="coupon_form" action="javascript:void(0);" method="get">
