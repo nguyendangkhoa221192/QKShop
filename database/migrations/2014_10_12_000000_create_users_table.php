@@ -22,7 +22,11 @@ class CreateUsersTable extends Migration
             $table->string('address')->collation('utf8_unicode_ci');
             $table->integer('type_id');
             $table->rememberToken();
+            $table->string('created_by')->collation('utf8_unicode_ci');
+            $table->string('updated_by')->nullable($value = true)->collation('utf8_unicode_ci');
+            $table->string('deleted_by')->nullable($value = true)->collation('utf8_unicode_ci');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

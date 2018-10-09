@@ -1,6 +1,6 @@
 @php
-$lovelist = Cart::instance(Config::get('constants.home.LOVE_LIST_BAG', 'lovelist'));
-$content = Cart::instance(Config::get('constants.home.LOVE_LIST_BAG', 'lovelist'))->content();
+$lovelist = Cart::instance(LOVE_LIST_BAG);
+$content = $lovelist->content();
 $total_price = $lovelist->total();
 $counter = $lovelist->count();
 @endphp

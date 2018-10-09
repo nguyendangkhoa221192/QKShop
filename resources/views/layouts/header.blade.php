@@ -45,7 +45,7 @@
 
 			<!-- LOGO -->
 			<div class="logo">
-				<a href="{{ route('home') }}" ><img src="{{ asset ('images/logo.png') }}" alt="" /></a>
+				<a href="{{ route('index') }}" ><img src="{{ asset ('images/logo.png') }}" alt="" /></a>
 			</div><!-- //LOGO -->
 
 
@@ -61,7 +61,7 @@
 			<!-- SHOPPING BAG -->
 			<div class="shopping_bag">
 				@php
-					$count = Cart::instance(Config::get('constants.home.SHOPPING_BAG', 'shopping'))->count();
+					$count = Cart::instance(SHOPPING_BAG)->count();
 				@endphp
 				<a class="shopping_bag_btn" href="javascript:void(0);" ><i class="fa fa-shopping-cart"></i><p>shopping bag</p><span>{{ $count or 0 }}</span></a>
 				@include('home._ajax._shopping_bag_content')
@@ -71,7 +71,7 @@
 			<!-- LOVE LIST -->
 			<div class="love_list">
 				@php
-					$count_ll = Cart::instance(Config::get('constants.home.LOVE_LIST_BAG', 'lovelist'))->count();
+					$count_ll = Cart::instance(LOVE_LIST_BAG)->count();
 				@endphp
 				<a class="love_list_btn" href="javascript:void(0);" ><i class="fa fa-heart-o"></i><p>Love list</p><span>{{ $count_ll or 0 }}</span></a>
 				@include('home._ajax._shopping_lovelist_content')
@@ -149,7 +149,7 @@
 									<li><a href="about.html" >About Us</a></li>
 									<li><a href="gallery.html" >Gallery<span>new</span></a></li>
 									<li><a href="product-page.html" >Product Page</a></li>
-									<li><a href="{{ route('loveList') }}" >Love List</a></li>
+									<li><a href="{{ route('lovelist_index') }}" >Love List</a></li>
 									<li><a href="{{ route('shoppingCart') }}" >Shopping Bag</a></li>
 									<li><a href="my-account.html" >My Account</a></li>
 

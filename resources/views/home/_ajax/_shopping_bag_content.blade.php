@@ -1,8 +1,8 @@
 @php
-$shopping_bag = Cart::instance(Config::get('constants.home.SHOPPING_BAG', 'shopping'));
-$content = Cart::instance(Config::get('constants.home.SHOPPING_BAG', 'shopping'))->content();
-$total_price = $shopping_bag->total();
-$counter = $shopping_bag->count();
+$shopping_bag = Cart::instance(SHOPPING_BAG);
+$content      = $shopping_bag->content();
+$total_price  = $shopping_bag->total();
+$counter      = $shopping_bag->count();
 @endphp
 
 <div class="cart">

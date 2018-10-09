@@ -1,8 +1,6 @@
 <?php
-return [
-	'home' => [
-		'SHOPPING_BAG' => 'shopping',
-		'LOVE_LIST_BAG' => 'lovelist'
-	],
-];
+defined('SHOPPING_BAG')
+    or define('SHOPPING_BAG', 'shopping');
+defined('LOVE_LIST_BAG')
+    or define('LOVE_LIST_BAG', 'lovelist');
 ?>

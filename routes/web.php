@@ -14,7 +14,7 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::match(['get', 'post'],'/' ,'Home\HomeController@index')->name('home');
+Route::match(['get', 'post'],'/' ,'Home\HomeController@index')->name('index');
 Route::match(['get', 'post'],'/account' ,'Account\AccountController@index')->name('account');
 Route::prefix('/account')->group(function() {
 	Route::post('create', 'Account\AccountController@createUser')->name('createUser');
@@ -30,5 +30,8 @@ Route::group(['prefix' => 'shopping'], function() {
     Route::post('cart/remove', 'Shopping\ShoppingController@removeProduct')->name('removeCart');
     
     // API Love list
-    Route::match(['get', 'post'], 'lovelist', 'Shopping\LoveListController@lovelist')->name('loveList');
+    Route::group(['prefix' => 'lovelist', 'as' => 'lovelist'], function() {
+        Route::get('', 'Shopping\LoveListController@index')->name('_index');
+    	Route::post('add', 'Shopping\LoveListController@lovelist')->name('_add');
+    });
 });

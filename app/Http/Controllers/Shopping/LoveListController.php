@@ -3,42 +3,50 @@
 namespace App\Http\Controllers\Shopping;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\BaseController;
 use App\Model\Product;
 use Cart;
-use Config;
 
-class LoveListController extends Controller
+class LoveListController extends BaseController
 {
-	public function lovelist(Request $request)
-	{
-		if ($request->ajax()) {
-			$result['isSuccess'] = false;
-			if ($request->has('id_product')) {
-				$product = Product::find($request->input('id_product'));
-				if (is_null($product)) {
-					$result['isSuccess'] = false;
-				} else {
-					$lovelist = Cart::instance(Config::get('constants.home.LOVE_LIST_BAG', 'lovelist'));
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
-					$image = explode(";", $product->image_url);
-					$lovelist->add([
-						'id' => $product->id,
-						'name' => $product->product_name,
-						'qty' => 1,
-						'price' => $product->product_price,
-						'options' => ['img' => $image[0]]
-					]);
+    public function index(Request $request)
+    {
+        $title = 'Love List';
+        return view('shopping.love_list', [
+            'title' => $title,
+        ]);
+    }
 
-					$result['isSuccess'] = true;
-					$result['count'] = $lovelist->count();
-				}
-			}
-		} else {
-			$title = 'Love List';
-			return view('shopping.love_list', [
-				'title' => $title,
-			]);
-		}
-	}
+    public function lovelist(Request $request)
+    {
+        $result['isSuccess'] = false;
+        if ($request->has('id_product')) {
+            $product = Product::find($request->input('id_product'));
+            if (is_null($product)) {
+                $result['isSuccess'] = false;
+            } else {
+                $lovelist = Cart::instance(LOVE_LIST_BAG);
+
+                $image = explode(";", $product->image_url);
+                $lovelist->add([
+                    'id' => $product->id,
+                    'name' => $product->product_name,
+                    'qty' => 1,
+                    'price' => $product->product_price,
+                    'options' => ['img' => $image[0]]
+                ]);
+
+                $result['isSuccess'] = true;
+                $result['count'] = $lovelist->count();
+            }
+        } else {
+            $result['isSuccess'] = false;
+        }
+        return response()->json($result);
+    }
 }

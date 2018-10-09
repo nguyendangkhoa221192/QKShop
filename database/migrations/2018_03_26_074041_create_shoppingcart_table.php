@@ -16,8 +16,11 @@ class CreateShoppingcartTable extends Migration
             $table->string('instance');
             $table->longText('content');
             $table->nullableTimestamps();
-
             $table->primary(['identifier', 'instance']);
+            $table->string('created_by')->collation('utf8_unicode_ci');
+            $table->string('updated_by')->nullable($value = true)->collation('utf8_unicode_ci');
+            $table->string('deleted_by')->nullable($value = true)->collation('utf8_unicode_ci');
+            $table->softDeletes();
         });
     }
     /**

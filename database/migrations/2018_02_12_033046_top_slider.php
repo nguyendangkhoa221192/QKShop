@@ -18,7 +18,11 @@ class TopSlider extends Migration
             $table->string('image_url')->collation('utf8_unicode_ci');
             $table->string('redirect_url')->nullable($value = true)->collation('utf8_unicode_ci');
             $table->integer('top_slider_groups_id');
+            $table->string('created_by')->collation('utf8_unicode_ci');
+            $table->string('updated_by')->nullable($value = true)->collation('utf8_unicode_ci');
+            $table->string('deleted_by')->nullable($value = true)->collation('utf8_unicode_ci');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

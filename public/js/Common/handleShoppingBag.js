@@ -49,7 +49,7 @@ $(document).ready(function() {
 		var id_product = $(this).data('id');
 		var _token = $(this).data('_token');
 		$.ajax({
-			url: '/shopping/lovelist',
+			url: '/shopping/lovelist/add',
 			type: 'POST',
 			data: {
 				id_product: id_product,

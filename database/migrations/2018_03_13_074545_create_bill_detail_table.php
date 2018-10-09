@@ -19,7 +19,11 @@ class CreateBillDetailTable extends Migration
             $table->integer('id_product');
             $table->integer('quantity');
             $table->double('unit_price', 12, 2);
+            $table->string('created_by')->collation('utf8_unicode_ci');
+            $table->string('updated_by')->nullable($value = true)->collation('utf8_unicode_ci');
+            $table->string('deleted_by')->nullable($value = true)->collation('utf8_unicode_ci');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
