@@ -35,6 +35,8 @@ class Parser
      *
      * @param  string  $expression
      * @return string
+     *
+     * @throws \InvalidArgumentException
      */
     protected static function name($expression)
     {
@@ -141,6 +143,6 @@ class Parser
     {
         $parts = preg_split('/\s+:\s+/', trim($token), 2);
 
-        return count($parts) === 2 ? $parts : [$token, null];
+        return count($parts) === 2 ? $parts : [$token, ''];
     }
 }

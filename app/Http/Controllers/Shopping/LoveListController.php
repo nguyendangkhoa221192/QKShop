@@ -16,10 +16,9 @@ class LoveListController extends BaseController
 
     public function index(Request $request)
     {
-        $title = 'Love List';
-        return view('shopping.love_list', [
-            'title' => $title,
-        ]);
+        $this->data['title']    = 'Love List';
+        $this->data['lovelist'] = Cart::instance(LOVE_LIST_BAG);
+        return view('shopping.love_list', $this->data);
     }
 
     public function lovelist(Request $request)
@@ -31,7 +30,6 @@ class LoveListController extends BaseController
                 $result['isSuccess'] = false;
             } else {
                 $lovelist = Cart::instance(LOVE_LIST_BAG);
-
                 $image = explode(";", $product->image_url);
                 $lovelist->add([
                     'id' => $product->id,

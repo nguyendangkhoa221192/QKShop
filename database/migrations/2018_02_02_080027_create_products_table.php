@@ -15,10 +15,13 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id')->unique();
-            $table->string('product_name')->collation('utf8_unicode_ci');
-            $table->double('product_price', 12, 2);
-            $table->integer('product_category_id');
-            $table->integer('product_quantity');
+            $table->string('barcode')->collation('utf8_unicode_ci');
+            $table->string('name')->collation('utf8_unicode_ci');
+            $table->double('price', 12, 2);
+            $table->string('image_url')->collation('utf8_unicode_ci');
+            $table->integer('type_id');
+            $table->integer('category_id');
+            $table->integer('quantity');
             $table->string('created_by')->collation('utf8_unicode_ci');
             $table->string('updated_by')->nullable($value = true)->collation('utf8_unicode_ci');
             $table->string('deleted_by')->nullable($value = true)->collation('utf8_unicode_ci');

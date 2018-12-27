@@ -135,12 +135,13 @@ class DatabaseSeeder extends Seeder
       for ($i = 1; $i <= 24; $i++) {
         $img = rand(1, 6);
         DB::table('products')->insert([
-          "product_name" => "Product " . $i,
-          "product_price" => $i*10,
+          "barcode" => "abcProduct" . $i,
+          "name" => "Product " . $i,
+          "price" => $i*10,
           "image_url" => "images/tovar/women/" . $img . ".jpg;images/tovar/women/" . $img . "_2.jpg",
           "type_id" => rand(1, 3),
-          "product_category_id" => 1,
-          "product_quantity" => $i,
+          "category_id" => 1,
+          "quantity" => $i,
           'created_by'  => 'khoand',
           'created_at'  => $this->time_now
         ]);
@@ -150,12 +151,13 @@ class DatabaseSeeder extends Seeder
     private function createDataProductArrival() {
       for ($i = 1; $i <= 16; $i++) {
         DB::table('products')->insert([
-          "product_name" => "Arrivals " . $i,
-          "product_price" => $i*10,
+          "barcode" => "abcArrivals" . $i,
+          "name" => "Arrivals " . $i,
+          "price" => $i*10,
           "image_url" => "images/tovar/women/new/" . rand(1, 6) . ".jpg",
           "type_id" => rand(1, 3),
-          "product_category_id" => 2,
-          "product_quantity" => $i,
+          "category_id" => 2,
+          "quantity" => $i,
           'created_by'  => 'khoand',
           'created_at'  => $this->time_now
         ]);

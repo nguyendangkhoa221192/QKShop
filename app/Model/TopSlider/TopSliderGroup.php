@@ -2,7 +2,7 @@
 
 namespace App\Model\TopSlider;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Model\BaseModel as Model;
 
 class TopSliderGroup extends Model
 {

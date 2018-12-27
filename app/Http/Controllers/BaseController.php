@@ -16,8 +16,8 @@ class BaseController extends Controller
     public function __construct()
     {
         $top_silder_groups = TopSliderGroup::all();
-        $featureds         = Product::where('product_category_id' , 1)->get();
-        $arrivals          = Product::where('product_category_id' , 2)->get();
+        $featureds         = Product::where('category_id' , 1)->get();
+        $arrivals          = Product::where('category_id' , 2)->get();
         $brands            = Brand::all();
         $this->data['title']             = "Base Controller";
         $this->data['top_silder_groups'] = $top_silder_groups;
